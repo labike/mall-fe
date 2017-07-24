@@ -2,9 +2,11 @@
  * @Author: labike 
  * @Date: 2017-07-16 01:54:14 
  * @Last Modified by: labike
- * @Last Modified time: 2017-07-16 01:55:21
+ * @Last Modified time: 2017-07-22 15:11:27
  */
 
  'use strict'
 
- console.log('i am global');
+ require('./layout.css');
+ require('node_modules/font-awesome/css/font-awesome.min.css');
+ require('./footer/index.css');

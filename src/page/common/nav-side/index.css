@@ -1,0 +1,26 @@
+/*
+ * @Author: labike 
+ * @Date: 2017-07-22 16:30:16 
+ * @Last Modified by: labike
+ * @Last Modified time: 2017-07-22 17:19:20
+ */
+
+ .nav-side{
+     float: left;
+     width: 130px;
+     min-height: 100px;
+ }
+.nav-side .nav-item{
+    height: 25px;
+    font-size: 13px;
+}
+.nav-side .nav-item .link{
+    color: #888;
+}
+.nav-side .nav-item.active .link{
+    color: #c60023;
+} 
+.content.with-nav{
+    float: left;
+    width: 950px;
+}

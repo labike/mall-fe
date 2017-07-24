@@ -2,10 +2,14 @@
  * @Author: labike 
  * @Date: 2017-07-16 01:17:57 
  * @Last Modified by: labike
- * @Last Modified time: 2017-07-16 02:06:08
+ * @Last Modified time: 2017-07-22 17:20:03
  */
-'use strict'
+'use strict';
 
-require('./index.css');
-require('../module.js');
-console.log('hello index');
+require('page/common/nav/index.js')
+require('page/common/header/index.js');
+var navSide = require('page/common/nav-side/index.js');
+var _ma = require('util/ma.js');
+
+
+navSide.init({name: 'pass-update'});
