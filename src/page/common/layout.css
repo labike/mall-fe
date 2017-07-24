@@ -2,7 +2,7 @@
  * @Author: labike 
  * @Date: 2017-07-22 11:37:48 
  * @Last Modified by: labike
- * @Last Modified time: 2017-07-22 14:10:56
+ * @Last Modified time: 2017-07-24 22:17:34
  */
 
  /*reset*/
@@ -33,6 +33,22 @@ label{
     width: 1080px;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
+}
+.panel{
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+.panel .panel-title{
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+}
+.panel .panel-body{
+    padding: 10px;
     overflow: hidden;
 }
 /*全局*/

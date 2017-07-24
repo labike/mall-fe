@@ -2,7 +2,7 @@
  * @Author: labike 
  * @Date: 2017-07-22 16:27:42 
  * @Last Modified by: labike
- * @Last Modified time: 2017-07-22 17:15:36
+ * @Last Modified time: 2017-07-25 00:07:52
  */
 
  'use strict';
@@ -17,8 +17,8 @@
          navList: [
              {name: 'user-center', desc: '个人中心', href: './user-center.html'},
              {name: 'order-list', desc: '我的订单', href: './order-list.html'},
-             {name: 'pass-update', desc: '修改密码', href: './pass-update.html'},
-             {name: 'about', dsc: '关于我们', href: './about.html'}
+             {name: 'user-pass-update', desc: '修改密码', href: './user-pass-update.html'},
+             {name: 'about', desc: '关于我们', href: './about.html'}
          ]
      },
      init: function(option){

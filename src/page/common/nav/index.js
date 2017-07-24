@@ -2,8 +2,8 @@
  * @Author: labike 
  * @Date: 2017-07-22 14:48:39 
  * @Last Modified by: labike
- * @Last Modified time: 2017-07-24 09:04:08
- */
+ * @Last Modified time: 2017-07-24 17:56:32
+*/
 
 'use strict';
 
@@ -36,8 +36,8 @@ var nav = {
     },
     loadUserInfo: function(){
         _user.checkLogin(function(res){
-            $('.user.not-logout').hide().siblings('.user.login').show()
-                .find('username').text(res.username);
+            $('.user.not-login').hide().siblings('.user.login').show()
+                .find('.username').text(res.username);
         }, function(errMsg){
         
         });

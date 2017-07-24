@@ -2,7 +2,7 @@
  * @Author: labike 
  * @Date: 2017-07-21 22:27:51 
  * @Last Modified by: labike
- * @Last Modified time: 2017-07-23 12:47:19
+ * @Last Modified time: 2017-07-24 23:29:05
  */
 
 'use strict';
@@ -57,8 +57,8 @@ var _ma = {
     successTips: function(msg){
         alert(msg || '操作成功~');
     },
-    errorTips: function(){
-        alert(msg || '哪里不对了~')
+    errorTips: function(msg){
+        alert(msg || '哪里不对了~');
     },
     //字段验证
     validate: function(value, type){
@@ -74,7 +74,7 @@ var _ma = {
         }
     },
     doLogin : function(){
-        window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+        window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
     },
     goHome: function(){
         window.location.href = './index.html';
