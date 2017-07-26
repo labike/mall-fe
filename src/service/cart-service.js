@@ -2,7 +2,7 @@
  * @Author: labike 
  * @Date: 2017-07-22 23:47:44 
  * @Last Modified by: labike
- * @Last Modified time: 2017-07-24 18:03:39
+ * @Last Modified time: 2017-07-26 22:14:37
  */
 
 'use strict';
@@ -14,6 +14,14 @@ var _cart = {
     getCartCount: function(resolve, reject){
         _ma.request({
             url: _ma.getServerUrl('/cart/get_cart_product_count.do'),
+            success: resolve,
+            error: reject
+        });
+    },
+    addToCart: function(productInfo, resolve, reject){
+        _ma.request({
+            url: _ma.getServerUrl('/cart/add.do'),
+            data: productInfo,
             success: resolve,
             error: reject
         });

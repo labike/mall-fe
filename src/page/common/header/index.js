@@ -2,7 +2,7 @@
  * @Author: labike 
  * @Date: 2017-07-22 15:23:28 
  * @Last Modified by: labike
- * @Last Modified time: 2017-07-24 17:35:43
+ * @Last Modified time: 2017-07-26 09:29:03
  */
 
 'use strict';
@@ -13,6 +13,7 @@ var _ma = require('util/ma.js');
 //通用页面头部
 var header = {
     init: function(){
+        this.onLoad();
         this.bindEvent();
     },
     onLoad: function(){
