@@ -2,7 +2,7 @@
  * @Author: labike 
  * @Date: 2017-07-24 21:53:39 
  * @Last Modified by: labike
- * @Last Modified time: 2017-07-28 00:01:14
+ * @Last Modified time: 2017-07-28 10:15:13
  */
 
 'use strict';
@@ -117,7 +117,7 @@ var page = {
         //提交购物车
         $(document).on('click', '.btn-submit', function(){
             if(_this.data.cartInfo && _this.data.cartInfo.cartTotalPrice > 0){
-                window.location.href = './confirm.html';
+                window.location.href = './order-confirm.html';
             }else{
                 _ma.errorTips('请选择商品后提交');
             }
