@@ -2,7 +2,7 @@
  * @Author: labike
  * @Date: 2017-07-16 01:01:50 
  * @Last Modified by: labike
- * @Last Modified time: 2017-08-02 20:05:47
+ * @Last Modified time: 2017-08-02 22:46:47
  */
  
 var webpack = require('webpack');
@@ -18,6 +18,7 @@ var getHtmlConfig = function(name, title){
         template: './src/view/' + name + '.html',
         filename: 'view/' + name + '.html',
         title: title,
+        favicon: './favicon.ico',
         inject: true,
         hash: true,
         chunks: ['common', name]
@@ -41,11 +42,12 @@ var config = {
         'user-center': ['./src/page/user-center/index.js'],
         'user-center-update': ['./src/page/user-center-update/index.js'],
         'user-pass-update': ['./src/page/user-pass-update/index.js'],
-        'result': ['./src/page/result/index.js']
+        'result': ['./src/page/result/index.js'],
+        'about': ['./src/page/about/index.js']
      },
      output: {
-         path: './dist',
-         publicPath: '/dist',
+         path: __dirname + '/dist/',
+         publicPath: 'dev' === WEBPACK_ENV ? '/dist/' : '//s.happymmall.com/mall-fe/dist/',
          filename: 'js/[name].js'
      },
      externals: {
@@ -55,7 +57,14 @@ var config = {
         loaders: [
             {test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader","css-loader")},
             {test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader: 'url-loader?limit=100&name=resource/[name].[ext]'},
-            {test: /\.string$/, loader: 'html-loader'}
+            {
+                test: /\.string$/, 
+                loader: 'html-loader',
+                query: {
+                    minimize: true,
+                    removeAttributeQuotes: false
+                }
+            }
         ]
      },
     resolve: {
@@ -90,6 +99,7 @@ var config = {
          new HtmlWebpackPlugin(getHtmlConfig('user-center-update', '修改个人信息')),
          new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', '修改密码')),
          new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果')),
+         new HtmlWebpackPlugin(getHtmlConfig('about', '关于我们'))
      ]
  };
 

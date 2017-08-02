@@ -2,16 +2,9 @@
  * @Author: labike 
  * @Date: 2017-08-02 20:43:27 
  * @Last Modified by: labike
- * @Last Modified time: 2017-08-02 20:54:38
+ * @Last Modified time: 2017-08-02 21:13:35
  */
 
-
-/*
- * @Author: labike 
- * @Date: 2017-07-22 23:46:53 
- * @Last Modified by: labike
- * @Last Modified time: 2017-08-01 17:25:09
- */
 
 'use strict';
 
