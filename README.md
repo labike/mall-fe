@@ -42,18 +42,28 @@ resetful api
         
 
 技术选型(猥琐发育不能浪):
+
     html
+    
     css
+    
     js
+    
     lib:
         jquery
+        
     webpack
+    
     nodeJs
 
 开发工具:
+
     sublime/vs code
+    
     chrome 
+    
     fiddler/charles 
+    
     git
 
 
