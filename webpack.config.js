@@ -47,7 +47,7 @@ var config = {
      },
      output: {
          path: __dirname + '/dist/',
-         publicPath: 'dev' === WEBPACK_ENV ? '/dist/' : '//s.happymmall.com/mall-fe/dist/',
+         publicPath: 'dev' === WEBPACK_ENV ? '/dist/' : '//static.qmwjj.cc/',
          filename: 'js/[name].js'
      },
      externals: {
